@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="375" height="375" viewBox="0 0 375 375">
+<defs>
+<clipPath id="clip_0">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z" clip-rule="evenodd"/>
+</clipPath>
+<clipPath id="clip_1">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z" clip-rule="evenodd"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z" clip-rule="evenodd"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z"/>
+</clipPath>
+<clipPath id="clip_5">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M1001.85128 763.01687 937.7697 698.9353 1052.6746 584.03048 1116.7561 648.112 1001.85128 763.01687Z"/>
+</clipPath>
+<clipPath id="clip_6">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M938.7019 699.8675 1002.78347 763.94906 1117.6884 649.0442 1053.6068 584.96267 938.7019 699.8675Z"/>
+</clipPath>
+<clipPath id="clip_7">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z"/>
+</clipPath>
+<clipPath id="clip_8">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z"/>
+</clipPath>
+<clipPath id="clip_9">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M989.1678 712.64749 953.81246 748.0028 887.5212 681.71157 922.8765 646.3562 989.1678 712.64749Z"/>
+</clipPath>
+<clipPath id="clip_10">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M953.53628 748.279 988.8916 712.92367 922.60037 646.6324 887.245 681.98776 953.53628 748.279Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_0)">
+<path transform="matrix(.75,0,0,.75,0,0)" d="M0 0H500V500H0Z" fill="#ffffff"/>
+</g>
+<g clip-path="url(#clip_1)">
+<path transform="matrix(.75,0,0,.75,0,0)" d="M0 0H500V500H0Z" fill="#ffffff"/>
+</g>
+<g clip-path="url(#clip_2)">
+<text fill="#149d80" xml:space="preserve" transform="matrix(.75 0 0 .75 69.28186 142.5)" font-size="86.15" font-family="DMSans" font-weight="bold"><tspan y="89" x=".140625 42.08989 86.27881 114.87628 190.07584 236.76284 265.3603">Farmora</tspan></text>
+</g>
+<g clip-path="url(#clip_3)">
+<g clip-path="url(#clip_4)">
+<g clip-path="url(#clip_5)">
+<g clip-path="url(#clip_6)">
+<path transform="matrix(.17029032,.17029032,.17029032,-.17029032,225.30609,167.95056)" d="M82.07 81.473C82.07 122.21 44.914 155.23001 44.914 155.23001 44.914 155.23001 6.8980028 122.21001 6.8980028 81.47301 6.8984029 40.73401 44.914 7.711006 44.914 7.711006 44.914 7.710906 82.07 40.734006 82.07 81.47301" fill="#149d80"/>
+</g>
+</g>
+</g>
+</g>
+<g clip-path="url(#clip_7)">
+<g clip-path="url(#clip_8)">
+<g clip-path="url(#clip_9)">
+<g clip-path="url(#clip_10)">
+<path transform="matrix(.09608509,-.09608509,-.09608509,-.09608509,228.83655,179.57482)" d="M82.07 81.473C82.07 122.21 44.914 155.23001 44.914 155.23001 44.914 155.23001 6.8980028 122.21001 6.8980028 81.47301 6.8984029 40.73401 44.914 7.711006 44.914 7.711006 44.914 7.710906 82.07 40.734006 82.07 81.47301" fill="#149d80"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

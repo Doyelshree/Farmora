@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Farmora</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+     
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: AgriCulture
+  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body class="services-page">
+    <header id="header" class="header d-flex align-items-center position-relative">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets\img\svgviewer-output.svg" alt="Farmora">
+          <!-- <h1 class="sitename">AgriCulture</h1>  -->
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            
+            <li><a href="services.html" class="active">Our Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="chatbot.html">Dr. Farmora</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div
+        class="page-title dark-background"
+        data-aos="fade"
+        style="
+          background-image: url(assets/img/page-title-bg.webp);
+          height: 30px;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        "
+      >
+        <div class="container position-relative">
+          <h1>Crop Prediction</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="services.html">Services</a></li>
+              <li class="current">Crop Prediction</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Page Title -->
+      <div
+        class="form-container"
+        style="
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+          width: 60%;
+          margin: 0 auto;
+          background-color: rgba(255, 255, 255, 0.7);
+          padding: 30px;
+          border-radius: 10px;
+        "
+      >
+        <div class="form-group" style="margin-bottom: 20px">
+          <label
+            for="rainfall"
+            style="font-size: 18px; font-weight: bold; color: #333"
+            >Average Rainfall</label
+          >
+          <input
+            type="text"
+            id="rainfall"
+            placeholder="Enter Average Rainfall In Millimeter"
+            style="
+              padding: 10px;
+              width: 100%;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              margin-top: 10px;
+            "
+          />
+        </div>
+
+        <div class="form-group" style="margin-bottom: 20px">
+          <label
+            for="area-size"
+            style="font-size: 18px; font-weight: bold; color: #333"
+            >Area Size</label
+          >
+          <input
+            type="text"
+            id="area-size"
+            placeholder="Enter Area Size In Acers"
+            style="
+              padding: 10px;
+              width: 100%;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              margin-top: 10px;
+            "
+          />
+        </div>
+
+        <div class="form-group" style="margin-bottom: 20px">
+          <label
+            for="temperature"
+            style="font-size: 18px; font-weight: bold; color: #333"
+            >Average Temp</label
+          >
+          <input
+            type="text"
+            id="temperature"
+            placeholder="Enter Average Temp In Celcius"
+            style="
+              padding: 10px;
+              width: 100%;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              margin-top: 10px;
+            "
+          />
+        </div>
+
+        <div class="form-group" style="margin-bottom: 20px">
+          <label
+            for="season"
+            style="font-size: 18px; font-weight: bold; color: #333"
+            >Season</label
+          >
+          <input
+            type="text"
+            id="season"
+            placeholder="Enter Season"
+            style="
+              padding: 10px;
+              width: 100%;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              margin-top: 10px;
+            "
+          />
+        </div>
+
+        <button
+          id="predict-btn"
+          style="
+            grid-column: span 2;
+            padding: 10px;
+            font-size: 18px;
+            background-color: #116530;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          "
+        >
+          Enter
+        </button>
+
+        <div
+          class="output-group"
+          style="
+            grid-column: span 2;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <label
+            for="crop-name"
+            style="
+              font-size: 18px;
+              font-weight: bold;
+              color: #333;
+              margin-bottom: 10px;
+            "
+            >Crop Name</label
+          >
+          <p
+            id="crop-name"
+            style="font-size: 18px; font-weight: bold; color: #333"
+          >
+            Result will appear here
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer id="footer" class="footer dark-background">
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Farmora</span>
+              </a>
+              
+                <div class="footer-contact pt-3">
+                  <p>EM-4/1, Sector-V</p>
+                  <p>Salt Lake, Kolkata-700091</p>
+                  <p class="mt-3"><strong>Phone:</strong> <span>033-23575683</span></p>
+                  <p><strong>Email:</strong> <span>info@ticollege.ac.in</span></p>
+                </div>
+            </div>
+  
+            <div class="col-lg-2 col-md-3 footer-links" style="margin-left: auto; text-align: right;">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="chatbot.html">Dr.Farmora</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="col-lg-2 col-md-3 footer-links" style="margin-left: auto; text-align: right;">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="dis_dia.html">Disease Diagnosis</a></li>
+                <li><a href="prevention.html">Personalized Treatment</a></li>
+                <li><a href="crop.html">Crop Health Prediction</a></li>
+                <li><a href="fertilizer.html">Fertilizer Recommendation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="copyright text-center">
+        <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+  
+          <div class="d-flex flex-column align-items-center align-items-lg-start">
+            <div>
+              © Copyright <strong><span>FarMora</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+              
+            </div>
+          </div>
+  
+          <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+  
+        </div>
+      </div>
+  
+    </footer>
+  </body>
+</html>
+
+<script>
+  document.getElementById("predict-btn").addEventListener("click", function () {
+    // Get the input values
+    const rainfall = parseFloat(document.getElementById("rainfall").value);
+    const areaSize = parseFloat(document.getElementById("area-size").value);
+    const temperature = parseFloat(
+      document.getElementById("temperature").value
+    );
+    const season = document.getElementById("season").value.toLowerCase();
+
+    // Mock crop dataset with 100 crops
+    const crops = [
+      {
+        name: "Wheat",
+        rainfallRange: [300, 500],
+        areaRange: [1, 100],
+        tempRange: [15, 25],
+        seasons: ["winter", "spring"],
+      },
+      {
+        name: "Corn",
+        rainfallRange: [400, 600],
+        areaRange: [10, 150],
+        tempRange: [18, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Rice",
+        rainfallRange: [600, 1000],
+        areaRange: [20, 300],
+        tempRange: [20, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Barley",
+        rainfallRange: [200, 400],
+        areaRange: [5, 100],
+        tempRange: [10, 20],
+        seasons: ["winter", "spring"],
+      },
+      {
+        name: "Soybeans",
+        rainfallRange: [500, 700],
+        areaRange: [15, 200],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Cotton",
+        rainfallRange: [200, 400],
+        areaRange: [50, 300],
+        tempRange: [25, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Potato",
+        rainfallRange: [300, 600],
+        areaRange: [1, 50],
+        tempRange: [15, 22],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Tomato",
+        rainfallRange: [400, 800],
+        areaRange: [10, 100],
+        tempRange: [18, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Carrot",
+        rainfallRange: [300, 500],
+        areaRange: [1, 40],
+        tempRange: [10, 22],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Onion",
+        rainfallRange: [300, 600],
+        areaRange: [5, 80],
+        tempRange: [10, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Lettuce",
+        rainfallRange: [400, 700],
+        areaRange: [1, 30],
+        tempRange: [10, 20],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Cucumber",
+        rainfallRange: [500, 800],
+        areaRange: [5, 70],
+        tempRange: [18, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Pepper",
+        rainfallRange: [500, 700],
+        areaRange: [10, 60],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Squash",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Pumpkin",
+        rainfallRange: [500, 800],
+        areaRange: [20, 100],
+        tempRange: [15, 30],
+        seasons: ["summer", "autumn"],
+      },
+      {
+        name: "Eggplant",
+        rainfallRange: [500, 700],
+        areaRange: [5, 50],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Zucchini",
+        rainfallRange: [400, 600],
+        areaRange: [10, 60],
+        tempRange: [18, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Sweet Corn",
+        rainfallRange: [500, 700],
+        areaRange: [10, 80],
+        tempRange: [18, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Chili Pepper",
+        rainfallRange: [400, 600],
+        areaRange: [5, 30],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Garlic",
+        rainfallRange: [300, 600],
+        areaRange: [5, 40],
+        tempRange: [10, 20],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Ginger",
+        rainfallRange: [500, 800],
+        areaRange: [10, 50],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Turmeric",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 50],
+        tempRange: [20, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Oregano",
+        rainfallRange: [300, 500],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Basil",
+        rainfallRange: [400, 700],
+        areaRange: [5, 40],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Coriander",
+        rainfallRange: [300, 600],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Rosemary",
+        rainfallRange: [300, 500],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Mint",
+        rainfallRange: [400, 600],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Chives",
+        rainfallRange: [300, 500],
+        areaRange: [5, 20],
+        tempRange: [10, 20],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Dill",
+        rainfallRange: [300, 500],
+        areaRange: [5, 20],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Parsley",
+        rainfallRange: [300, 600],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Arugula",
+        rainfallRange: [400, 700],
+        areaRange: [5, 20],
+        tempRange: [10, 20],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Kale",
+        rainfallRange: [400, 700],
+        areaRange: [5, 30],
+        tempRange: [10, 20],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Spinach",
+        rainfallRange: [400, 700],
+        areaRange: [5, 20],
+        tempRange: [10, 20],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Swiss Chard",
+        rainfallRange: [400, 700],
+        areaRange: [5, 30],
+        tempRange: [10, 20],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Beetroot",
+        rainfallRange: [300, 600],
+        areaRange: [5, 30],
+        tempRange: [10, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Radish",
+        rainfallRange: [300, 600],
+        areaRange: [5, 20],
+        tempRange: [10, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Turnip",
+        rainfallRange: [300, 600],
+        areaRange: [5, 30],
+        tempRange: [10, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Rutabaga",
+        rainfallRange: [300, 600],
+        areaRange: [5, 30],
+        tempRange: [10, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Parsnip",
+        rainfallRange: [300, 600],
+        areaRange: [5, 30],
+        tempRange: [10, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Leek",
+        rainfallRange: [300, 600],
+        areaRange: [5, 30],
+        tempRange: [10, 20],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Celery",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Fennel",
+        rainfallRange: [400, 700],
+        areaRange: [10, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Chicory",
+        rainfallRange: [400, 700],
+        areaRange: [10, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Endive",
+        rainfallRange: [400, 700],
+        areaRange: [10, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Bok Choy",
+        rainfallRange: [400, 700],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Mustard Greens",
+        rainfallRange: [400, 700],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Mustard Greens",
+        rainfallRange: [400, 700],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Dandelion Greens",
+        rainfallRange: [400, 700],
+        areaRange: [5, 30],
+        tempRange: [10, 20],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Napa Cabbage",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Savoy Cabbage",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Red Cabbage",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Green Cabbage",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Brussels Sprouts",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Cauliflower",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Broccoli",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Romanesco",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Kohlrabi",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Asparagus",
+        rainfallRange: [300, 500],
+        areaRange: [10, 30],
+        tempRange: [10, 20],
+        seasons: ["spring"],
+      },
+      {
+        name: "Rhubarb",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [10, 20],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Artichoke",
+        rainfallRange: [500, 800],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Okra",
+        rainfallRange: [500, 800],
+        areaRange: [10, 50],
+        tempRange: [20, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Sweet Potatoes",
+        rainfallRange: [500, 800],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Yams",
+        rainfallRange: [500, 800],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Beets",
+        rainfallRange: [300, 600],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Turnip Greens",
+        rainfallRange: [300, 600],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Watercress",
+        rainfallRange: [400, 700],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Cress",
+        rainfallRange: [400, 700],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Endive",
+        rainfallRange: [400, 700],
+        areaRange: [10, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Escarole",
+        rainfallRange: [400, 700],
+        areaRange: [10, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Kohlrabi",
+        rainfallRange: [400, 700],
+        areaRange: [10, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Chard",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Shallots",
+        rainfallRange: [400, 700],
+        areaRange: [5, 30],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Green Beans",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Snap Peas",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 30],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Snow Peas",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 30],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Lima Beans",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Kidney Beans",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Pinto Beans",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Black Beans",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Soybean",
+        rainfallRange: [500, 700],
+        areaRange: [15, 200],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Chickpeas",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Lentils",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Peanuts",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Sesame",
+        rainfallRange: [500, 800],
+        areaRange: [10, 50],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Sunflower",
+        rainfallRange: [400, 700],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Safflower",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Flaxseed",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Mustard",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Rapeseed",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Canola",
+        rainfallRange: [400, 700],
+        areaRange: [10, 50],
+        tempRange: [15, 25],
+        seasons: ["spring", "autumn"],
+      },
+      {
+        name: "Grapes",
+        rainfallRange: [500, 800],
+        areaRange: [10, 100],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Blueberries",
+        rainfallRange: [500, 800],
+        areaRange: [5, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Strawberries",
+        rainfallRange: [500, 800],
+        areaRange: [5, 50],
+        tempRange: [15, 30],
+        seasons: ["spring", "summer"],
+      },
+      {
+        name: "Raspberries",
+        rainfallRange: [500, 800],
+        areaRange: [5, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Blackberries",
+        rainfallRange: [500, 800],
+        areaRange: [5, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Gooseberries",
+        rainfallRange: [500, 800],
+        areaRange: [5, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Currants",
+        rainfallRange: [500, 800],
+        areaRange: [5, 50],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Apples",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["summer", "autumn"],
+      },
+      {
+        name: "Pears",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["summer", "autumn"],
+      },
+      {
+        name: "Peaches",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["summer"],
+      },
+      {
+        name: "Plums",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["summer"],
+      },
+      {
+        name: "Cherries",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["summer"],
+      },
+      {
+        name: "Apricots",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["summer"],
+      },
+      {
+        name: "Nectarines",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["summer"],
+      },
+      {
+        name: "Quinces",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["autumn"],
+      },
+      {
+        name: "Pomegranates",
+        rainfallRange: [500, 800],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Figs",
+        rainfallRange: [500, 800],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Kiwifruit",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["summer"],
+      },
+      {
+        name: "Avocado",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Mango",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Papaya",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Passion Fruit",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Guava",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Lychee",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Longan",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Durian",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [25, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Jackfruit",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [25, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Tamarind",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Date Palm",
+        rainfallRange: [500, 800],
+        areaRange: [10, 100],
+        tempRange: [25, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Olives",
+        rainfallRange: [500, 800],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Almonds",
+        rainfallRange: [400, 700],
+        areaRange: [10, 100],
+        tempRange: [15, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Walnuts",
+        rainfallRange: [500, 800],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["summer"],
+      },
+      {
+        name: "Pecans",
+        rainfallRange: [500, 800],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Cashews",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Hazelnuts",
+        rainfallRange: [400, 700],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["summer"],
+      },
+      {
+        name: "Chestnuts",
+        rainfallRange: [500, 800],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["autumn"],
+      },
+      {
+        name: "Pine Nuts",
+        rainfallRange: [500, 800],
+        areaRange: [10, 100],
+        tempRange: [15, 25],
+        seasons: ["summer"],
+      },
+      {
+        name: "Soursop",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Cherimoya",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Sapodilla",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [25, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Starfruit",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Rambutan",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [25, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Salak",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [25, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Jaboticaba",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [20, 30],
+        seasons: ["summer"],
+      },
+      {
+        name: "Cupuacu",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [25, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Açaí",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [25, 35],
+        seasons: ["summer"],
+      },
+      {
+        name: "Graviola",
+        rainfallRange: [600, 1000],
+        areaRange: [10, 100],
+        tempRange: [25, 35],
+        seasons: ["summer"],
+      },
+      // Add more crops here, up to 100
+      // The structure for each crop: { name, rainfallRange, areaRange, tempRange, seasons }
+    ];
+
+    // Find crops that match the input conditions
+    let matchingCrops = crops.filter((crop) => {
+      return (
+        rainfall >= crop.rainfallRange[0] &&
+        rainfall <= crop.rainfallRange[1] &&
+        areaSize >= crop.areaRange[0] &&
+        areaSize <= crop.areaRange[1] &&
+        temperature >= crop.tempRange[0] &&
+        temperature <= crop.tempRange[1] &&
+        crop.seasons.includes(season)
+      );
+    });
+
+    // Display the result
+    let output = document.getElementById("crop-name");
+    if (matchingCrops.length > 0) {
+      output.innerHTML = matchingCrops.map((crop) => crop.name).join(", ");
+    } else {
+      output.innerHTML = "No matching crops found for the input conditions.";
+    }
+  });
+
+  AOS.init();
+</script>

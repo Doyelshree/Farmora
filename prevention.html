@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Farmora</title> 
+    <meta name="description" content=" "/> 
+    <meta name="keywords" content=" " /> 
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+     
+  </head>
+
+  <body class="services-page">
+    <header id="header" class="header d-flex align-items-center position-relative">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets\img\svgviewer-output.svg" alt="Farmora">
+          <!-- <h1 class="sitename">AgriCulture</h1>  -->
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            
+            <li><a href="services.html" class="active">Our Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="chatbot.html">Dr. Farmora</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+      </div>
+      <style>
+        .main {
+            width: 40%;
+            
+            margin: 100px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+          
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .m1{
+          color: #116530;
+        }
+        p {
+            color: #116530;
+            font-size: .9 rem;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
+        /* Input and Button Styling */
+        .input-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input[type="text"] {
+            padding: 12px 20px;
+            width: 50%;
+            border-radius: 30px;
+            border: 2px solid#116530;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #116530;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        button {
+            padding: 12px 30px;
+            background-color:#116530;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #116530;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Results styling */
+        .results {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .result-item {
+            background: #8ef3b3;
+            padding: 15px;
+            margin-top: 10px;
+            border-left: 5px solid #116530;
+            border-radius: 4px;
+            font-size: 16px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+      </style>
+    </header>
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);  height: 30px; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;">
+      <div class="container position-relative">
+        <h1>Personalized Treatment</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="services.html">Services</a></li>
+            <li class="current">Personalized Treatment</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="main">
+      <h1 class="m1" >Personalized Treatment</h1>
+      <p>Empowering Tree Health with AI-Driven Disease Detection and Prevention</p>
+
+      <div class="input-container">
+          <input type="text" id="diseaseName" placeholder="Enter disease name">
+          <button onclick="getTreatment()">Enter</button>
+      </div>
+
+      <div class="results" id="results"></div>
+  </div>
+     
+    <footer id="footer" class="footer dark-background">
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Farmora</span>
+              </a>
+              
+                <div class="footer-contact pt-3">
+                  <p>EM-4/1, Sector-V</p>
+                  <p>Salt Lake, Kolkata-700091</p>
+                  <p class="mt-3"><strong>Phone:</strong> <span>033-23575683</span></p>
+                  <p><strong>Email:</strong> <span>info@ticollege.ac.in</span></p>
+                </div>
+            </div>
+  
+            <div class="col-lg-2 col-md-3 footer-links" style="margin-left: auto; text-align: right;">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="chatbot.html">Dr.Farmora</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="col-lg-2 col-md-3 footer-links" style="margin-left: auto; text-align: right;">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="dis_dia.html">Disease Diagnosis</a></li>
+                <li><a href="prevention.html">Personalized Treatment</a></li>
+                <li><a href="crop.html">Crop Health Prediction</a></li>
+                <li><a href="fertilizer.html">Fertilizer Recommendation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="copyright text-center">
+        <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+  
+          <div class="d-flex flex-column align-items-center align-items-lg-start">
+            <div>
+              © Copyright <strong><span>FarMora</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+            </div>
+          </div>
+  
+          <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+  
+        </div>
+      </div>
+  
+    </footer>
+    <script>
+      const diseaseData = {
+          "powdery mildew": {
+              treatments: ["Use sulfur-based fungicides", "Increase air circulation", "Avoid overhead watering"],
+              medicine: "Sulfur Fungicide",
+              purchaseLink: "https://www.aajjo.com/agriculture-farming/saaf-fungicide-upl-packet-1kg-in-thane-sanjay-brothers/product"
+          },
+          "downy mildew": {
+              treatments: ["Apply fungicides with metalaxyl", "Reduce humidity", "Avoid overcrowding plants"],
+              medicine: "Metalaxyl Fungicide",
+              purchaseLink: "https://www.aajjo.com/agriculture-farming/saaf-fungicide-upl-packet-1kg-in-thane-sanjay-brothers/product"
+          },
+          "black spot": {
+              treatments: ["Remove affected leaves", "Use neem oil", "Improve air circulation"],
+              medicine: "Neem Oil",
+              purchaseLink: "https://krishnaayurved.com/products/pure-neem-oil-controls-acne?msclkid=0a7898dc5b891c37a18ffe35629ba111&utm_source=bing&utm_medium=cpc&utm_campaign=Chetan_April_Shopping_Ads&utm_term=4587918434098183&utm_content=Ad%20group%20%231"
+          },
+          "mosaic virus": {
+              treatments: ["Remove infected plants", "Control insect vectors", "Disinfect tools"],
+              medicine: "Insecticidal Soap",
+              purchaseLink: "https://www.google.com/search?sca_esv=5a87a4e61a257730&sca_upv=1&rlz=1C1RLNS_enIN1120IN1120&sxsrf=ADLYWILqN3Uu5kwLFq7MqU8aNYfCISqZAQ:1726560030756&q=insecticidal+soap&tbm=shop&source=lnms&fbs=AEQNm0DPvcmG_nCbmwtBO9j6YBzM68ZanC7g01Skprhw5JoufVCiMv-hxC44jt6JduRQysBab-bgQXjPraaWFXMvOy8Kr1OAG3K-aj3De4zf3-LxKtkBtWaSCp743evHzhY6J0rIQUCXki65vOxhV0cGJtj0S1dF8YREnKrWtJctBkTv8-bs83YpB7p3IMTdYvjisDEty1xSxeLS4B_TKFXUiCrenmEMcA&ved=1t:200715&ictx=111&biw=1536&bih=730&dpr=1.25#spd=13176791016321106528"
+          },
+          "leaf curl": {
+              treatments: ["Apply fungicide during dormant season", "Remove affected leaves", "Use resistant varieties"],
+              medicine: "Dormant Fungicide",
+              purchaseLink: "https://www.aajjo.com/agriculture-farming/saaf-fungicide-upl-packet-1kg-in-thane-sanjay-brothers/product"
+          },
+          "fusarium wilt": {
+              treatments: ["Use resistant plant varieties", "Improve soil drainage", "Rotate crops annually"],
+              medicine: "Fusarium Fungicide",
+              purchaseLink: "https://www.aajjo.com/agriculture-farming/saaf-fungicide-upl-packet-1kg-in-thane-sanjay-brothers/product"
+          },
+          "early blight": {
+              treatments: ["Remove infected plant material", "Apply copper-based fungicide", "Ensure proper plant spacing"],
+              medicine: "Copper Fungicide",
+              purchaseLink: "https://www.bing.com/shop?q=copper+based+fungicide&FORM=SHOPTB"
+          },
+          "rust": {
+              treatments: ["Apply sulfur or copper-based fungicides", "Remove infected leaves", "Avoid leaf wetness"],
+              medicine: "Sulfur-Based Fungicide",
+              purchaseLink: "https://www.aajjo.com/agriculture-farming/saaf-fungicide-upl-packet-1kg-in-thane-sanjay-brothers/product"
+          },
+          "sooty mold": {
+              treatments: ["Wash leaves with water", "Control aphids and scale", "Improve air circulation"],
+              medicine: "https://www.google.com/search?sca_esv=5a87a4e61a257730&sca_upv=1&rlz=1C1RLNS_enIN1120IN1120&sxsrf=ADLYWILqN3Uu5kwLFq7MqU8aNYfCISqZAQ:1726560030756&q=insecticidal+soap&tbm=shop&source=lnms&fbs=AEQNm0DPvcmG_nCbmwtBO9j6YBzM68ZanC7g01Skprhw5JoufVCiMv-hxC44jt6JduRQysBab-bgQXjPraaWFXMvOy8Kr1OAG3K-aj3De4zf3-LxKtkBtWaSCp743evHzhY6J0rIQUCXki65vOxhV0cGJtj0S1dF8YREnKrWtJctBkTv8-bs83YpB7p3IMTdYvjisDEty1xSxeLS4B_TKFXUiCrenmEMcA&ved=1t:200715&ictx=111&biw=1536&bih=730&dpr=1.25#spd=13176791016321106528",
+              purchaseLink: "https://example.com/insecticidal-soap"
+          },
+          "snow mold": {
+              treatments: ["Rake affected areas", "Apply fungicide", "Reduce thatch layer"],
+              medicine: "Snow Mold Fungicide",
+              purchaseLink: "https://www.aajjo.com/agriculture-farming/saaf-fungicide-upl-packet-1kg-in-thane-sanjay-brothers/product"
+          },
+          "root rot": {
+              treatments: ["Improve soil drainage", "Apply fungicidal drench", "Avoid waterlogged conditions"],
+              medicine: "Root Rot Drench",
+              purchaseLink: "https://www.bing.com/shop/productpage?q=+Root+Rot+Drench&filters=scenario%3a%2217%22+gType%3a%2212%22+gId%3a%2213051222182%22+gIdHash%3a%220%22+gGlobalOfferIds%3a%2213051222182%22+AucContextGuid%3a%220%22+GroupEntityId%3a%2213051222182%22+NonSponsoredOffer%3a%22True%22&productpage=true&FORM=SHPPDP&browse=true&cvid=0B08347A729940A9AA8F285F8CA7416E"
+          },
+          "leaf curl (peach)": {
+              treatments: ["Apply fungicide during dormant season", "Remove affected leaves", "Use resistant varieties"],
+              medicine: "Peach Leaf Curl Fungicide",
+              purchaseLink: "https://www.aajjo.com/agriculture-farming/saaf-fungicide-upl-packet-1kg-in-thane-sanjay-brothers/product"
+          },
+          "bacterial leaf blight": {
+              treatments: ["Remove affected leaves", "Apply copper bactericide", "Improve air circulation"],
+              medicine: "Copper Bactericide",
+              purchaseLink: "https://www.bing.com/shop/productpage?q=+Copper+Bactericide&filters=scenario%3a%2217%22+gType%3a%2212%22+gId%3a%22216502966707%22+gIdHash%3a%220%22+gGlobalOfferIds%3a%22216502966707%22+AucContextGuid%3a%220%22+GroupEntityId%3a%22216502966707%22+NonSponsoredOffer%3a%22True%22&productpage=true&FORM=SHPPDP&browse=true&cvid=A720507AF5AE40F18670925DF1C93E7A"
+          },
+          "bacterial soft rot": {
+              treatments: ["Remove infected plant material", "Improve air circulation", "Use copper-based bactericides"],
+              medicine: "Bacterial Rot Control",
+              purchaseLink: "https://www.bing.com/shop/productpage?q=Bacterial+Rot+Control&filters=scenario%3a%2217%22+gType%3a%2212%22+gId%3a%22119037547855%22+gIdHash%3a%220%22+gGlobalOfferIds%3a%22119037547855%22+AucContextGuid%3a%220%22+GroupEntityId%3a%22119037547855%22+NonSponsoredOffer%3a%22True%22&productpage=true&FORM=SHPPDP&browse=true&cvid=0FFEB11DB0DA41BE8A0CF3DAA960B1BA"
+          },
+          "charcoal rot": {
+              treatments: ["Remove infected plants", "Improve soil drainage", "Rotate crops"],
+              medicine: "Charcoal Rot Fungicide",
+              purchaseLink: "https://www.aajjo.com/agriculture-farming/saaf-fungicide-upl-packet-1kg-in-thane-sanjay-brothers/product"
+          },
+           
+          "verticillium wilt": {
+              treatments: ["Remove and destroy infected plants", "Improve soil drainage", "Use resistant varieties"],
+              medicine: "Wilt Control Fungicide",
+              purchaseLink: "https://www.bing.com/shop/productpage?q=+Wilt+Control+Fungicide&filters=scenario%3a%2217%22+gType%3a%2212%22+gId%3a%2267365915485%22+gIdHash%3a%220%22+gGlobalOfferIds%3a%2267365915485%22+AucContextGuid%3a%220%22+GroupEntityId%3a%2267365915485%22+NonSponsoredOffer%3a%22True%22&productpage=true&FORM=SHPPDP&browse=true&cvid=8DAAD73206B4480496EBF274A1B4D17E"
+          },
+          "scab": {
+              treatments: ["Use resistant varieties", "Apply fungicidal sprays", "Remove fallen leaves and fruit"],
+              medicine: "Scab Treatment Fungicide",
+              purchaseLink: "https://essentialbiosciences.com/products/legacy-70/250gx1?srsltid=AfmBOoofTkrGVUYCZ_Qn-EOH9CsJDelvWXSnrxQP2qJdfYnbcR4ok57M2q0"
+          },
+          "gray mold": {
+              treatments: ["Remove affected flowers and leaves", "Apply fungicide", "Increase air circulation"],
+              medicine: "Botrytis Fungicide",
+              purchaseLink: "https://www.bing.com/shop/productpage?q=Botrytis+Fungicide&filters=scenario%3a%2217%22+gType%3a%2212%22+gId%3a%2248570874431%22+gIdHash%3a%220%22+gGlobalOfferIds%3a%2248570874431%22+AucContextGuid%3a%220%22+GroupEntityId%3a%2248570874431%22+NonSponsoredOffer%3a%22True%22&productpage=true&FORM=SHPPDP&browse=true"
+          }
+      };
+  
+      function getTreatment() {
+          const disease = document.getElementById("diseaseName").value.toLowerCase();
+          const results = document.getElementById("results");
+          results.innerHTML = ""; // Clear previous results
+          if (diseaseData[disease]) {
+              diseaseData[disease].treatments.forEach((treatment, index) => {
+                  const div = document.createElement("div");
+                  div.className = "result-item";
+                  div.innerHTML = `<strong>Treatment ${index + 1}:</strong> ${treatment}`;
+                  results.appendChild(div);
+              });
+              // Adding the medicine and purchase link
+              const medicineDiv = document.createElement("div");
+              medicineDiv.className = "result-item";
+              medicineDiv.innerHTML = `<strong>Medicine:</strong> ${diseaseData[disease].medicine} - <a href="${diseaseData[disease].purchaseLink}" target="_blank" class="purchase-link">Buy here</a>`;
+              results.appendChild(medicineDiv);
+          } else {
+              results.innerHTML = "<div class='result-item'>No treatment found for the specified disease.</div>";
+          }
+      }
+  </script>
+  <script>
+    AOS.init();
+</script>
+  
+  </body>
+</html>

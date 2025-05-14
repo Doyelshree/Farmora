@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Farmora</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+     
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: AgriCulture
+  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body class="services-page">
+    <header id="header" class="header d-flex align-items-center position-relative">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets\img\svgviewer-output.svg" alt="Farmora">
+          <!-- <h1 class="sitename">AgriCulture</h1>  -->
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            
+            <li><a href="services.html"class="active">Our Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="chatbot.html">Dr. Farmora</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div
+        class="page-title dark-background"
+        data-aos="fade"
+        style="
+          background-image: url(assets/img/page-title-bg.webp);
+          height: 30px;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        "
+      >
+        <div class="container position-relative">
+          <h1>Fertilizer Suggestion</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="services.html">Services</a></li>
+              <li class="current">Fertilizer Suggestion</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Page Title -->
+
+      <div
+        class="container"
+        style="
+          max-width: 600px;
+          margin: 0px auto;
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+        "
+      >
+        <form id="fertilizer-form" style="margin-top: 10px">
+          <!-- Crop Name Dropdown -->
+          <div class="form-group" style="margin-bottom: 15px; text-align: left">
+            <label
+              for="crop-name"
+              style="display: block; margin-bottom: 5px; font-weight: bold"
+              >Crop Name</label
+            >
+            <select
+              id="crop-name"
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+              "
+            >
+              <option value="" disabled selected>Select Crop</option>
+            </select>
+          </div>
+
+          <!-- Input for Soil pH -->
+          <div class="form-group" style="margin-bottom: 15px; text-align: left">
+            <label
+              for="soil-ph"
+              style="display: block; margin-bottom: 5px; font-weight: bold"
+              >Enter Soil pH</label
+            >
+            <input
+              type="number"
+              step="0.1"
+              id="soil-ph"
+              placeholder="Enter Soil pH"
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+              "
+            />
+          </div>
+
+          <!-- Reason for using fertilizer -->
+          <div class="form-group" style="margin-bottom: 15px; text-align: left">
+            <label
+              for="why-use"
+              style="display: block; margin-bottom: 5px; font-weight: bold"
+              >Why You Need to Use</label
+            >
+            <select
+              id="why-use"
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+              "
+            >
+              <option value="" disabled selected>Select Reason</option>
+              <option value="Boost crop growth">Boost crop growth</option>
+              <option value="Improve soil fertility">
+                Improve soil fertility
+              </option>
+              <option value="Enhance nutrient absorption">
+                Enhance nutrient absorption
+              </option>
+              <option value="Increase crop yield">Increase crop yield</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-group" style="margin-bottom: 15px; text-align: left">
+            <button
+              type="button"
+              onclick="getFertilizer()"
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #116530;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: bold;
+                cursor: pointer;
+              "
+            >
+              Enter
+            </button>
+          </div>
+
+          <!-- Output for Fertilizer Name -->
+          <div class="form-group" style="margin-bottom: 15px; text-align: left">
+            <label
+              for="fertilizer-name"
+              style="display: block; margin-bottom: 5px; font-weight: bold"
+              >Fertilizer Name</label
+            >
+            <input
+              type="text"
+              id="fertilizer-name"
+              readonly
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+              "
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer id="footer" class="footer dark-background">
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Farmora</span>
+              </a>
+              
+                <div class="footer-contact pt-3">
+                  <p>EM-4/1, Sector-V</p>
+                  <p>Salt Lake, Kolkata-700091</p>
+                  <p class="mt-3"><strong>Phone:</strong> <span>033-23575683</span></p>
+                  <p><strong>Email:</strong> <span>info@ticollege.ac.in</span></p>
+                </div>
+            </div>
+  
+            <div class="col-lg-2 col-md-3 footer-links" style="margin-left: auto; text-align: right;">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="chatbot.html">Dr.Farmora</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="col-lg-2 col-md-3 footer-links" style="margin-left: auto; text-align: right;">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="dis_dia.html">Disease Diagnosis</a></li>
+                <li><a href="prevention.html">Personalized Treatment</a></li>
+                <li><a href="crop.html">Crop Health Prediction</a></li>
+                <li><a href="fertilizer.html">Fertilizer Recommendation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="copyright text-center">
+        <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+  
+          <div class="d-flex flex-column align-items-center align-items-lg-start">
+            <div>
+              © Copyright <strong><span>FarMora</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+              
+            </div>
+          </div>
+  
+          <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+  
+        </div>
+      </div>
+  
+    </footer>
+  </body>
+</html>
+
+<script>
+  // Dataset for 5 crops with crop name, ph, cause of use, and fertilizer name
+  const cropData = [
+    // Reason: Boost crop growth
+    {
+      name: "Wheat",
+      ph: "6.0 - 7.0",
+      reason: "Boost crop growth",
+      fertilizerName: "Urea",
+    },
+    {
+      name: "Rice",
+      ph: "5.5 - 6.5",
+      reason: "Boost crop growth",
+      fertilizerName: "DAP (Diammonium Phosphate)",
+    },
+    {
+      name: "Corn",
+      ph: "5.8 - 7.0",
+      reason: "Boost crop growth",
+      fertilizerName: "NPK (20-20-0)",
+    },
+    {
+      name: "Soybeans",
+      ph: "6.0 - 7.0",
+      reason: "Boost crop growth",
+      fertilizerName: "NPK (12-32-16)",
+    },
+    {
+      name: "Barley",
+      ph: "6.0 - 7.5",
+      reason: "Boost crop growth",
+      fertilizerName: "NPK (15-15-15)",
+    },
+    {
+      name: "Sugarcane",
+      ph: "6.0 - 7.0",
+      reason: "Boost crop growth",
+      fertilizerName: "Urea + Potash",
+    },
+    {
+      name: "Pulses",
+      ph: "6.0 - 7.5",
+      reason: "Boost crop growth",
+      fertilizerName: "NPK (14-35-14)",
+    },
+    {
+      name: "Millets",
+      ph: "5.8 - 7.0",
+      reason: "Boost crop growth",
+      fertilizerName: "NPK (13-13-21)",
+    },
+
+    // Reason: Improve soil fertility
+    {
+      name: "Mustard",
+      ph: "6.0 - 7.5",
+      reason: "Improve soil fertility",
+      fertilizerName: "NPK (20-20-0)",
+    },
+    {
+      name: "Chili",
+      ph: "6.0 - 7.0",
+      reason: "Improve soil fertility",
+      fertilizerName: "NPK (19-19-19)",
+    },
+    {
+      name: "Cotton",
+      ph: "6.0 - 7.5",
+      reason: "Improve soil fertility",
+      fertilizerName: "NPK (30-10-10)",
+    },
+    {
+      name: "Tomato",
+      ph: "6.0 - 7.0",
+      reason: "Improve soil fertility",
+      fertilizerName: "NPK (10-10-10)",
+    },
+    {
+      name: "Onion",
+      ph: "6.0 - 7.0",
+      reason: "Improve soil fertility",
+      fertilizerName: "NPK (15-15-15)",
+    },
+    {
+      name: "Potato",
+      ph: "5.5 - 6.5",
+      reason: "Improve soil fertility",
+      fertilizerName: "NPK (20-20-20)",
+    },
+    {
+      name: "Groundnut",
+      ph: "6.0 - 7.0",
+      reason: "Improve soil fertility",
+      fertilizerName: "NPK (12-24-12)",
+    },
+    {
+      name: "Tea",
+      ph: "4.5 - 5.5",
+      reason: "Improve soil fertility",
+      fertilizerName: "Tea Fertilizer Mix (NPK 14-14-14)",
+    },
+
+    // Reason: Enhance nutrient absorption
+    {
+      name: "Coffee",
+      ph: "6.0 - 6.5",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Coffee Fertilizer Blend (NPK 12-24-12)",
+    },
+    {
+      name: "Tobacco",
+      ph: "5.8 - 6.8",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Tobacco Fertilizer Mix (NPK 10-20-20)",
+    },
+    {
+      name: "Ginger",
+      ph: "5.5 - 6.5",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Ginger Fertilizer Mix (NPK 14-14-14)",
+    },
+    {
+      name: "Garlic",
+      ph: "6.0 - 7.0",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Garlic Fertilizer Blend (NPK 20-20-10)",
+    },
+    {
+      name: "Brinjal",
+      ph: "6.0 - 7.0",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Brinjal Fertilizer Mix (NPK 10-20-20)",
+    },
+    {
+      name: "Cauliflower",
+      ph: "6.0 - 7.0",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Cauliflower Fertilizer Blend (NPK 15-15-15)",
+    },
+    {
+      name: "Cabbage",
+      ph: "6.0 - 7.0",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Cabbage Fertilizer Mix (NPK 20-20-20)",
+    },
+    {
+      name: "Beans",
+      ph: "6.0 - 7.5",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Beans Fertilizer Mix (NPK 15-15-15)",
+    },
+
+    // Reason: Increase crop yield
+    {
+      name: "Peas",
+      ph: "6.0 - 7.0",
+      reason: "Increase crop yield",
+      fertilizerName: "Peas Fertilizer Blend (NPK 10-20-10)",
+    },
+    {
+      name: "Radish",
+      ph: "6.0 - 7.0",
+      reason: "Increase crop yield",
+      fertilizerName: "Radish Fertilizer Mix (NPK 20-20-10)",
+    },
+    {
+      name: "Carrot",
+      ph: "6.0 - 7.0",
+      reason: "Increase crop yield",
+      fertilizerName: "Carrot Fertilizer Blend (NPK 14-14-14)",
+    },
+    {
+      name: "Beetroot",
+      ph: "6.0 - 7.0",
+      reason: "Increase crop yield",
+      fertilizerName: "Beetroot Fertilizer Mix (NPK 15-15-15)",
+    },
+    {
+      name: "Pumpkin",
+      ph: "6.0 - 7.0",
+      reason: "Increase crop yield",
+      fertilizerName: "Pumpkin Fertilizer Blend (NPK 20-10-10)",
+    },
+    {
+      name: "Melon",
+      ph: "6.0 - 7.0",
+      reason: "Increase crop yield",
+      fertilizerName: "Melon Fertilizer Mix (NPK 10-20-20)",
+    },
+    {
+      name: "Watermelon",
+      ph: "6.0 - 7.0",
+      reason: "Increase crop yield",
+      fertilizerName: "Watermelon Fertilizer Blend (NPK 12-24-12)",
+    },
+    {
+      name: "Papaya",
+      ph: "6.0 - 7.0",
+      reason: "Increase crop yield",
+      fertilizerName: "Papaya Fertilizer Mix (NPK 14-14-14)",
+    },
+
+    // Reason: Enhance nutrient absorption
+    {
+      name: "Mango",
+      ph: "5.5 - 7.0",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Mango Fertilizer Blend (NPK 20-20-10)",
+    },
+    {
+      name: "Guava",
+      ph: "6.0 - 7.0",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Guava Fertilizer Mix (NPK 15-15-15)",
+    },
+    {
+      name: "Pomegranate",
+      ph: "6.0 - 7.0",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Pomegranate Fertilizer Blend (NPK 14-14-14)",
+    },
+    {
+      name: "Lemon",
+      ph: "5.5 - 6.5",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Lemon Fertilizer Mix (NPK 20-20-10)",
+    },
+    {
+      name: "Apple",
+      ph: "5.5 - 6.5",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Apple Fertilizer Blend (NPK 15-15-15)",
+    },
+    {
+      name: "Pear",
+      ph: "6.0 - 7.0",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Pear Fertilizer Mix (NPK 20-10-10)",
+    },
+    // Added for the total of 30 crops
+    {
+      name: "Papaya",
+      ph: "6.0 - 7.0",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Papaya Fertilizer Mix (NPK 14-14-14)",
+    },
+    {
+      name: "Mango",
+      ph: "5.5 - 7.0",
+      reason: "Enhance nutrient absorption",
+      fertilizerName: "Mango Fertilizer Blend (NPK 20-20-10)",
+    },
+  ];
+
+  // Populate the crop names in the dropdown
+  window.onload = function () {
+    const cropSelect = document.getElementById("crop-name");
+    cropData.forEach((crop) => {
+      let option = document.createElement("option");
+      option.value = crop.name;
+      option.textContent = crop.name;
+      cropSelect.appendChild(option);
+    });
+  };
+
+  // Function to get fertilizer details based on crop selection and user input
+  function getFertilizer() {
+    const selectedCrop = document.getElementById("crop-name").value;
+    const soilPhInput = document.getElementById("soil-ph").value;
+    const whyUseInput = document.getElementById("why-use").value;
+    const fertilizerInput = document.getElementById("fertilizer-name");
+
+    if (!selectedCrop || !soilPhInput || !whyUseInput) {
+      alert("Please fill all the fields.");
+      return;
+    }
+
+    const crop = cropData.find((crop) => crop.name === selectedCrop);
+
+    if (crop) {
+      // Check if entered pH falls within the range for the crop
+      const [minPh, maxPh] = crop.ph.split(" - ").map(Number);
+      const userPh = parseFloat(soilPhInput);
+
+      if (userPh < minPh || userPh > maxPh) {
+        alert("The entered pH is out of range for the selected crop.");
+        return;
+      }
+
+      if (crop.reason === whyUseInput) {
+        fertilizerInput.value = crop.fertilizerName;
+        showDisclaimer(); // Show disclaimer after displaying the fertilizer name
+      } else {
+        alert("The selected reason is not valid for this crop.");
+      }
+    } else {
+      alert("Please select a valid crop.");
+    }
+  }
+
+  // Function to show the disclaimer
+  function showDisclaimer() {
+    // Create a div for the disclaimer
+    const disclaimerDiv = document.createElement("div");
+    disclaimerDiv.setAttribute("id", "disclaimer");
+    disclaimerDiv.style.backgroundColor = "rgba(255, 255, 0, 0.8)";
+    disclaimerDiv.style.padding = "10px";
+    disclaimerDiv.style.marginTop = "15px";
+    disclaimerDiv.style.borderRadius = "5px";
+    disclaimerDiv.style.color = "black";
+    disclaimerDiv.style.fontWeight = "bold";
+
+    // Set disclaimer text
+    disclaimerDiv.textContent =
+      "Disclaimer: The provided fertilizer name is a suggestion. Please consult with an agricultural expert before use.";
+
+    // Append the disclaimer below the form
+    const form = document.getElementById("fertilizer-form");
+    form.appendChild(disclaimerDiv);
+  }
+
+  AOS.init();
+</script>
